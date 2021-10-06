@@ -3,6 +3,11 @@ require 'rails_helper'
 RSpec.describe "homepage/index.html.erb", type: :view do
   let(:homepage) { visit root_path }
 
+  before(:each) do
+    user = FactoryBot.create(:user)
+    login_as(user, :scope => :user)
+  end
+
   context 'homepage' do
     it '#index' do
       homepage

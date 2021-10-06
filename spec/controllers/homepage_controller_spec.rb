@@ -2,6 +2,11 @@ require 'rails_helper'
 
 RSpec.describe HomepageController, type: :controller do
 
+  before(:each) do
+    @request.env['devise.mapping'] = Devise.mappings[:user]
+    sign_in FactoryBot.create(:user) # Using factory bot as an example
+  end
+
   describe 'GET #index' do
     it 'returns http success' do
       get :index
