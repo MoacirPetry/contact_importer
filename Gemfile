@@ -5,6 +5,7 @@ ruby '2.5.8'
 
 gem 'bootstrap', '~> 5.1'
 gem 'devise'
+gem 'jquery-rails'
 gem 'pg', '>= 0.18', '< 2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
