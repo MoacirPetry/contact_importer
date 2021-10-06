@@ -14,7 +14,9 @@
         </li>
       </ul>
       <form class="d-flex">
-        <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "btn btn-outline-success", type: "submit" %>
+        <% unless !user_signed_in? %>
+          <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "btn btn-outline-success", type: "submit" %>
+        <% end %>
       </form>
     </div>
   </div>
