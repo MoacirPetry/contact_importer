@@ -26,7 +26,8 @@ module ContactImporter
       g.test_framework :rspec,
         view_specs: true,
         controller_specs: true,
-        helper_specs: true,
+        helper_specs: false,
+        request_specs: false,
         routing_specs: true
     end
 
