@@ -1,24 +1,24 @@
-# README
+<a href="https://www.ruby-lang.org/pt/">
+  <img alt="Ruby" src="https://img.shields.io/badge/Ruby-2.5.8-brightgreen" target="_blank">
+</a>
+<a href="https://rubyonrails.org/">
+  <img alt="Ruby on Rails" src="https://img.shields.io/badge/Rails-5.2.6-brightgreen" target="_blank">
+</a>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Contact Importer
 
-Things you may want to cover:
+This is an application that allow users to upload contact files in CSV format.
 
-* Ruby version
+### How to use in local environment
 
-* System dependencies
+1 - Git Clone
 
-* Configuration
+2 - Bundle Install
 
-* Database creation
+3 - Setup the Database
 
-* Database initialization
+4 - Run the Testings
 
-* How to run the test suite
+5 - Run the Application
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+6 - Use regarding the information in **Contact_Importer_Assignment.pdf** file.
