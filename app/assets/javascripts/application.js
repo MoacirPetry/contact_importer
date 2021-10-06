@@ -14,6 +14,5 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require popper
 //= require flash_message
 //= require bootstrap
