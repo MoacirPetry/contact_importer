@@ -1,7 +1,10 @@
-<%= form_tag contacts_import_path, multipart: true do %>
-  <%= file_field_tag :file %>
-  <%= submit_tag 'Import CSV file', class: 'btn btn-outline-secondary' %>
-<% end %>
+<div class="d-grid gap-2 d-md-flex">
+  <%= form_tag contacts_import_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag 'Import CSV file', class: 'btn btn-outline-secondary' %>
+  <% end %>
+  <%= link_to 'Delete all contacts', contacts_destroy_path, method: :delete, class: 'btn btn-outline-danger', type: "button" %>
+</div>
 <hr>
 
 <table class="table table-striped">
