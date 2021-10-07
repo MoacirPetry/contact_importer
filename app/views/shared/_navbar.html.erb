@@ -15,7 +15,10 @@
       </ul>
       <form class="d-flex">
         <% unless !user_signed_in? %>
-          <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "btn btn-outline-success", type: "submit" %>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <%= link_to "#{current_user.email}", edit_user_registration_path, class: 'btn btn-outline-light', type: "submit" %>
+            <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'btn btn-outline-light', type: "submit" %>
+          </div>
         <% end %>
       </form>
     </div>
