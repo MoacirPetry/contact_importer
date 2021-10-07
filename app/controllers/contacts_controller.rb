@@ -6,6 +6,9 @@ class ContactsController < ApplicationController
   def import
     Contact.import(params[:file], current_user)
     redirect_to contacts_index_path, notice: 'imported'
+    # @contacts = Array.new
+    # myfile = params[:file]
+    # @contacts = CSV.read(myfile.path)
   end
 
   def destroy
