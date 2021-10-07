@@ -1,4 +1,4 @@
-<a href="https://www.ruby-lang.org/pt/">
+<a href="https://www.ruby-lang.org/">
   <img alt="Ruby" src="https://img.shields.io/badge/Ruby-2.5.8-brightgreen" target="_blank">
 </a>
 <a href="https://rubyonrails.org/">
