@@ -7,11 +7,6 @@ class Contact < ApplicationRecord
   def self.import(file, current_user)
     CSV.foreach(file.path, headers: true) do |row|
       # Contact.create! row.to_hash
-      puts '=======    DEBUG  =========='
-      puts '============================'
-      puts row[0]
-      puts '========  END  ============='
-      puts '============================'
       Contact.create(
         name: row[0],
         date_of_birth: row[1],
