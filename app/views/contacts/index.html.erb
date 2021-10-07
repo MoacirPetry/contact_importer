@@ -27,7 +27,7 @@
         <td><%= contact.date_of_birth %></td>
         <td><%= contact.phone %></td>
         <td><%= contact.address %></td>
-        <td><%= contact.credit_card %></td>
+        <td><%= contact.credit_card.to_s.last(4) %></td>
         <td><%= contact.franchise %></td>
         <td><%= contact.email %></td>
         <td><%= contact.user.email %></td>
